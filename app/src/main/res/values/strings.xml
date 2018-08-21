@@ -46,4 +46,49 @@
     <!-- Text hint for supplier number field in the editor [CHAR LIMIT=30] -->
     <string name="hint_supplier_number">Supplier Number</string>
 
+    <!-- String for when row is successfully inserted-->
+    <string name="editor_insert_book_successful">book Inserted</string>
+
+    <!-- String for when row is not successfully inserted-->
+    <string name="editor_insert_book_failed">book Insertion Failed</string>
+
+    <!-- Title text for the empty view, which describes the empty dog house image [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">The shelves look a little empty...</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add a book [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding a book</string>
+
+    <string name="editor_activity_title_add_book">Add a book</string>
+    <string name="editor_activity_title_edit_book">Edit book</string>
+    <string name="editor_update_book_failed">book Update Failed</string>
+    <string name="editor_update_book_successful">book Updated</string>
+    <string name="unsaved_changes_dialog_msg"> Discard your changes and quit editing?</string>
+    <string name="discard">DISCARD</string>
+    <string name="keep_editing">KEEP EDITING</string>
+    <!-- Toast message in editor when current book was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_book_successful">book deleted</string>
+
+    <!-- Toast message in editor when current book has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_book_failed">Error with deleting book</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current book [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this book?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current book [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current book [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Label for the book's breed if the breed is unknown [CHAR LIMIT=20] -->
+    <string name="unknown_breed">Unknown breed</string>
+
+    <string name="sale">Sell</string>
+
+    <string name="edit_supplier_name_empty">Supplier Name cannot be empty</string>
+    <string name="edit_book_name_empty">Book Name cannot be empty</string>
+    <string name="quantity_not_negative">Quantity cannot be negative.</string>
+    <string name="sold_out">This book is sold out!</string>
+    <string name="enter_phone_num">Please enter Supplier Number!</string>
+    <string name="enter_quantity">Please enter initial quantity first!</string>
 </resources>

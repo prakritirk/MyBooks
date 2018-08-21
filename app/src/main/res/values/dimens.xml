@@ -6,4 +6,8 @@
 
     <!-- Common margin value used throughout the app -->
     <dimen name="activity_margin">16dp</dimen>
+    <dimen name="size_1_dp">1dp</dimen>
+    <dimen name="size_8_dp">8dp</dimen>
+    <dimen name="size_0_dp">0dp</dimen>
+    <dimen name="size_4_dp">0dp</dimen>
 </resources>

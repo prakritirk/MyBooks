@@ -20,7 +20,7 @@
 
         <!-- Input fields -->
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="@dimen/size_0_dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:orientation="vertical"
@@ -58,7 +58,6 @@
 
     <!-- Supplier category -->
     <LinearLayout
-        android:id="@+id/container_supplier"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -67,9 +66,10 @@
         <TextView
             style="@style/CategoryStyle"
             android:text="@string/category_supplier" />
+
         <!-- Input fields -->
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="@dimen/size_0_dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:orientation="vertical"
@@ -82,12 +82,32 @@
                 android:hint="@string/hint_supplier_name"
                 android:inputType="textCapWords" />
 
-            <!-- Breed field -->
-            <EditText
-                android:id="@+id/edit_supplier_number"
-                style="@style/EditorFieldStyle"
-                android:hint="@string/hint_supplier_number"
-                android:inputType="textCapWords" />
+            <!-- Input fields -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/size_4_dp">
+
+                <!-- Weight field -->
+                <EditText
+                    android:id="@+id/edit_supplier_number"
+                    style="@style/EditorFieldStyle"
+                    android:hint="@string/hint_supplier_number"
+                    android:inputType="number" />
+
+                <!-- Units for weight (kg) -->
+                <ImageButton
+                    android:id="@+id/call_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_call_button"
+                    android:text="@string/unit_book_dollar" />
+            </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
 
@@ -105,17 +125,36 @@
 
         <!-- Input fields -->
         <RelativeLayout
-            android:layout_width="0dp"
+            android:layout_width="@dimen/size_0_dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:paddingLeft="4dp">
+            android:paddingLeft="@dimen/size_4_dp">
 
             <!-- Weight field -->
             <EditText
                 android:id="@+id/edit_book_quantity"
                 style="@style/EditorFieldStyle"
+                android:layout_centerInParent="true"
                 android:hint="@string/hint_book_quantity"
                 android:inputType="number" />
+
+            <ImageButton
+                android:id="@+id/add_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/minus_button"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_arrow_add" />
+
+            <ImageButton
+                android:id="@+id/minus_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_arrow_down" />
+
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>
